@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>IoT Sensor Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<h1>IoT Sensor Monitoring Dashboard</h1>
+
+<!-- Sensor Cards -->
+<div class="cards">
+<div class="card" id="dht1">DHT1: --</div>
+<div class="card" id="dht2">DHT2: --</div>
+<div class="card" id="dht3">DHT3: --</div>
+<div class="card" id="dht4">DHT4: --</div>
+<div class="card" id="mq">MQ: --</div>
+</div>
+
+<h2>Sensor Data Table</h2>
+
+<table>
+<thead>
+<tr>
+<th>Time</th>
+<th>Sensor</th>
+<th>Value</th>
+<th>Status</th>
+</tr>
+</thead>
+
+<tbody id="table-body"></tbody>
+</table>
+
+<h2>Temperature Graph</h2>
+
+<canvas id="tempChart"></canvas>
+
+<script src="script.js"></script>
+
+</body>
+</html>
